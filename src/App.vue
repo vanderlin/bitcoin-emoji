@@ -2,7 +2,7 @@
 <section class="hero is-fullheight">
   <div class="hero-body">
     <div class="container">
-        <div class="status">
+        <div class="status" v-if="lastRate">
             <div class="emoji">{{range[this.placeCount]}}</div>
             <div class="is-text-7 latest" v-if="this.lastRate">${{toMoney(this.lastRate)}}</div>
             
